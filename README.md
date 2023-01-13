@@ -15,4 +15,4 @@ Kanban Board is a simple Kanban board application built with simple HTML, CSS an
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the WTFPL License - see the [LICENSE](LICENSE) file for details
