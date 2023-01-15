@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const Board = {
 
   // todo-tasks array
@@ -17,7 +18,6 @@ const addTask = (description1, date, mark, board) => {
 
   board.push(task);
 };
-addTask('test', '12-jan-2023', false, Board.todo);
 
 const removeTask = (board, index) => {
   board.splice(index, 1);
@@ -28,11 +28,9 @@ removeTask(Board.todo, 1);
 const move = (sourceBoard, destinationBoard) => {
   destinationBoard.push(sourceBoard);
 };
-move(Board.todo[0], Board.inProgress);
 
 const modification = (description1, date, mark, index) => {
   Board.todo[index].description = description1;
-  Board.todo[index].date_created = date;
+  Board.todo[index].date_created = date;/* eslint-disable no-unused-vars */
   Board.todo[index].isMarked = mark;
 };
-modification('retesting', '20-jan-2023', true, 0);
