@@ -1,4 +1,4 @@
-const obj = {
+const Board = {
 
   // todo-tasks array
   todo: [],
@@ -13,26 +13,26 @@ const addTask = (description1, date, mark, board) => {
     description: description1,
     date_created: date,
     isMarked: mark,
-  };// creting new object
+  };// creting new Boardect
 
   board.push(task);
 };
-addTask('test', '12-jan-2023', false, obj.todo);
+addTask('test', '12-jan-2023', false, Board.todo);
 
 const removeTask = (board, index) => {
   board.splice(index, 1);
 };
 
-removeTask(obj.todo, 1);
+removeTask(Board.todo, 1);
 
 const move = (sourceBoard, destinationBoard) => {
   destinationBoard.push(sourceBoard);
 };
-move(obj.todo[0], obj.inProgress);
+move(Board.todo[0], Board.inProgress);
 
 const modification = (description1, date, mark, index) => {
-  obj.todo[index].description = description1;
-  obj.todo[index].date_created = date;
-  obj.todo[index].isMarked = mark;
+  Board.todo[index].description = description1;
+  Board.todo[index].date_created = date;
+  Board.todo[index].isMarked = mark;
 };
 modification('retesting', '20-jan-2023', true, 0);
