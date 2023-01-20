@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <script defer type="module" src="./src/board.js"></script>
     <!-- Google fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,19 +22,19 @@
         <div class="category-header">
           <h2 class="category-header-heading">To Do</h2>
         </div>
-        <div class="category-board"></div>
+        <div class="category-board" id="todo-board"></div>
       </section>
       <section class="category" id="in-progress">
         <div class="category-header">
           <h2 class="category-header-heading">In Progress</h2>
         </div>
-        <div class="category-board"></div>
+        <div class="category-board" id="in-progress-board"></div>
       </section>
       <section class="category" id="done">
         <div class="category-header">
           <h2 class="category-header-heading">Done</h2>
         </div>
-        <div class="category-board"></div>
+        <div class="category-board" id="done-board"></div>
       </section>
     </main>
   </body>
