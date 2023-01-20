@@ -1,3 +1,54 @@
-* {
-  box-sizing: border-box;
+:root {
+  --foreground: #d8e9a8;
+  --background: #0f0e0e;
+  --primary: #4e9f3d;
+  --secondary: #1e5128;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Ubuntu, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  min-height: 100vh;
+}
+
+.category-header {
+  height: 80px;
+  width: 100%;
+  background-color: var(--primary);
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-header-heading {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.category-board {
+  background-color: var(--secondary);
+  width: 100%;
+  min-height: calc(90vh - 80px);
+  border-radius: 0 0 20px 20px;
 }
