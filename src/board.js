@@ -15,6 +15,7 @@ const removeTask = (board, index) => {
   board.splice(index, 1);
 };
 
+// TODO: fix this function
 const moveTask = (sourceBoard, destinationBoard, index) => {
   destinationBoard.push(sourceBoard[index]);
   removeTask(sourceBoard, index);
